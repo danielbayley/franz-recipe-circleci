@@ -1,0 +1,26 @@
+{
+  "name": "CircleCI",
+  "version": "1.0.0",
+  "description": "Franz recipe for CircleCI.",
+  "homepage": "https://circleci.com",
+  "repository": "https://github.com/danielbayley/franz-recipe-circleci",
+  "bugs": "https://github.com/danielbayley/franz-recipe-circleci/issues",
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
+  "license": "MIT",
+  "private": true,
+  "id": "circleci",
+  "devDependencies": {
+    "svg2png": "^4.1.1",
+    "svgo": "^1.0.2"
+  },
+  "config": {
+    "dev": "Library/Application Support/Franz/recipes/dev/circleci",
+    "serviceURL": "https://circleci.com/dashboard"
+  },
+  "scripts": {
+    "svg2png": "svg2png -w 1024 -h 1024 icon.{svg,png}",
+    "svgo": "svgo --multipass icon.svg",
+    "test": "ln -s \"$PWD\" \"$HOME/$npm_package_config_dev\"",
+    "unlink": "rm \"$HOME/$npm_package_config_dev\""
+  }
+}
