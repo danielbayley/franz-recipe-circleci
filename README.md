@@ -4,8 +4,6 @@ _[Franz] [recipe]_ for [CircleCI]
 =================================
 Requires [Franz] version `5.X`.
 
-:red_circle: The badge count is based on any recently failed builds, within the last week.
-
 [Install]
 ---------
 1. Clone this repository to the `Franz/recipes` folder:
